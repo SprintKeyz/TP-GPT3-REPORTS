@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="content">
+    <div class="form">
+        <h2>REPORT CREATOR</h2>
+        <div class="cat1">
+            <p>Student file</p>
+            <div id="uploadbox1" class="uploadbox">
+                <img src="{% static 'img/file.svg' %}" draggable="false">
+                <p>Click or drag files here to upload</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="buttons">
+            <button id="reset">Reset</button>
+            <button id="submit">Generate</button>
+        </div>
+    </div>
+</div>
+{% endblock content %}
