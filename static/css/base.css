@@ -108,6 +108,14 @@ p {
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.completed-loc input:focus {
+  outline: 1px solid #a9d8ff;
+  border-color: #a9d8ff;
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+    0 0 8px rgba(0, 0, 0, 0.15);
 }
 
 .completed-loc button {
