@@ -4,21 +4,29 @@
 {% block content %}
 <div class="content">
     <div class="form">
-        <h2>REPORT CREATOR</h2>
-        <div class="cat1">
-            <p>Student file</p>
-            <div id="uploadbox1" class="uploadbox">
-                <img src="{% static 'img/file.svg' %}" draggable="false">
-                <p>Click or drag files here to upload</p>
-            </div>
+        <h1>Comments Generator</h1>
+        <p>Sentiment File</p>
+        <div class="file-upload" id="sentiment-upload">
+            <p>Drag & drop or click to browse</p>
+        </div>
+        <p>Examples File</p>
+        <div class="file-upload" id="examples-upload">
+            <p>Drag & drop or click to browse</p>
+        </div>
+        <p>Completed Comments Location</p>
+        <div class="completed-loc">
+            <input type="text" id="completed-loc" placeholder="Select a Location...">
+            <button id="generate">Browse</button>
         </div>
 
         <hr>
 
-        <div class="buttons">
+        <div class="submit-reset">
             <button id="reset">Reset</button>
-            <button id="submit">Generate</button>
+            <button id="submit">Submit</button>
         </div>
     </div>
 </div>
 {% endblock content %}
+
+<!-- FORM CODE AS COMMENT IN views.py -->
