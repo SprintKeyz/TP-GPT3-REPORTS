@@ -8,6 +8,6 @@ def home(request):
     if request.method == "POST":
         print("Got form type", request.content_type)
         handle_submit(request.POST, request.FILES)
-        return redirect('')
+        return redirect('/')
 
     return render(request, 'home.html', {'title': 'Report Card Commenter'})
